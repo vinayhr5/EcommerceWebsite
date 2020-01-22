@@ -12,9 +12,7 @@
 */
 
 Route::get('/', function () {
-    return response()->json([
-        'stuff' =>phpinfo()
-    ]);
+   return view('welcome');
 });
 
 
