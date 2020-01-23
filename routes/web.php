@@ -16,8 +16,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('products', ['uses'=>"ProductsController@index"]);
+Route::get('products', ['uses'=>"ProductsController@index","as"=>"allProducts"]);
+Route::get('product/addToCart/{id}', ['uses'=>'ProductsController@addProductToCart','as'=>'AddToCartProduct']);
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+//show cart items
+Route::get('cart', ["uses"=>"ProductsController@showCart", "as"=> "cartproducts"]);
