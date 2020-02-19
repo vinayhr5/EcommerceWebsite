@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => env('DB_HOST', 'ec2-3-215-41-107.compute-1.amazonaws.com'),
+            'port' => env('DB_PORT', '5432'),
+            'database' => env('DB_DATABASE', 'de1pcg9s31qbo9'),
+            'username' => env('DB_USERNAME', 'ioclgmkoibhgfb'),
+            'password' => env('DB_PASSWORD', '2ee39a51fa763c88cf3508bd42079fa91654ef69149ab664a52a8c797b17b330'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -66,11 +66,11 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'ec2-3-215-41-107.compute-1.amazonaws.com'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('shopping', 'shopping'),
-            'username' => env('postgres', 'postgres'),
-            'password' => env('admin', 'admin'),
+            'database' => env('shopping', 'de1pcg9s31qbo9'),
+            'username' => env('postgres', 'ioclgmkoibhgfb'),
+            'password' => env('admin', '2ee39a51fa763c88cf3508bd42079fa91654ef69149ab664a52a8c797b17b330'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
