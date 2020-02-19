@@ -13,6 +13,7 @@
             <label for="name">Name</label>
             <input type="text" class="form-control" name="name" id="name" placeholder="Product Name" value="{{$product->name}}" required>
         </div>
+
         <div class="form-group">
             <label for="description">Description</label>
             <input type="text" class="form-control" name="description" id="description" placeholder="description" value="{{$product->description}}" required>

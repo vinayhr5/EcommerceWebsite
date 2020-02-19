@@ -33,8 +33,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{route('allProducts')}}">Home</a></li>
-                <li><a href="{{route('adminDisplayProducts')}}">Dashboard</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/admin/products">Dashboard</a></li>
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Help</a></li>
@@ -48,11 +48,10 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="{{route('adminDisplayProducts')}}">Overview <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Insert</a></li>
-                <li><a href="#">Orders</a></li>
+                <li class="active"><a href="/admin/index">Overview <span class="sr-only">(current)</span></a></li>
+                <li><a href="/admin/createProductForm">Insert</a></li>
                 <li><a href="#">Edit</a></li>
-                <li><a href="#">Users</a></li>
+                <li><a href="/admin/users">Users</a></li>
                 <li><a href="#">Analytics</a></li>
             </ul>
             <ul class="nav nav-sidebar">
